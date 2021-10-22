@@ -20,7 +20,7 @@ const signup = async (email, password, displayName) => {
     }    
     catch (err) {
         console.log(err.message)
-        error.value(err.message)
+        error.value = err.message
     }
 }
 
